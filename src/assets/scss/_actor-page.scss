@@ -1,0 +1,215 @@
+.actor-container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    min-height: 100vh;
+}
+
+.actor {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.actor-overview {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 3rem;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.image-and-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.actor-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    @media (max-width: 768px) {
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.actor-biography {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5%;
+    padding: 1.5rem;
+    max-height: 28.125rem;
+    overflow-y: auto;
+
+    h3 {
+        margin: 0 0 1rem 0;
+        font-size: 1.3rem;
+        color: var(--text-color);
+        padding-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: var(--text-color);
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        max-height: 250px;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+.actor-description {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.general-info {
+    text-align: center;
+
+    @media (max-width: 768px) {
+        text-align: left;
+    }
+}
+
+.actor-name {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    text-shadow: 0.05em 0.05em #fc0049, 0.09em 0.09em #fe8f01, 0.13em 0.13em #fdf21f, 0.17em 0.17em #3fdf4b, 0.21em 0.21em #3462fe;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
+}
+
+.birth-death {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+
+    .actor-birthday,
+    .actor-deathday {
+        font-size: 1.2rem;
+        color: var(--text-color);
+        margin: 0;
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        justify-content: flex-start;
+    }
+}
+
+
+
+.pob {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin: 0.5rem 0;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        text-align: left;
+        font-size: 1rem;
+    }
+}
+
+.filmography {
+    margin-top: 2rem;
+
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+            text-align: left;
+        }
+    }
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 1rem 0;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+}
+
+.movie-link {
+    text-decoration: none;
+    color: var(--text-color);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+
+    .movie-poster {
+        width: 100%
+    }
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.3);
+        text-decoration: none;
+        color: var(--text-color);
+        box-shadow: 0.1em 0.1em #fc0049, 0.15em 0.15em #fe8f01, 0.2em 0.2em #fdf21f, 0.25em 0.25em #3fdf4b, 0.3em 0.3em #3462fe;
+    }
+
+}
+
+.movie-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.3;
+
+    @media (max-width: 768px) {
+        font-size: 0.8rem;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}

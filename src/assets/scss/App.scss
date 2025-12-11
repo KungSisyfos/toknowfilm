@@ -1,0 +1,22 @@
+@import "actor-page";
+@import "card";
+@import "genre-page";
+@import "homepage";
+@import "logo-header";
+@import "movie-list";
+@import "movie-page";
+@import "navigation";
+
+@import "theme";
+
+
+@import "bootstrap/scss/bootstrap";
+
+
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+

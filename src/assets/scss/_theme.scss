@@ -1,0 +1,40 @@
+
+.dark-theme {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+}
+
+#App {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle-btn {
+  width: 3rem;
+  margin: 2%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 2s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+
+.navigation {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem;
+  
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+}

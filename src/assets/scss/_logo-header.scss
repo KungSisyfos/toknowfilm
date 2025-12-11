@@ -1,0 +1,63 @@
+
+.logo-header {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+
+  .backdrop-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 0.6s ease-in-out;
+    z-index: 1;
+  }
+
+  .logo-overlay {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  .logo-container {
+   
+    .logo {
+        padding: 0.2em;
+        border: 4px solid #ffffff;
+        font-family:'Courier New', Courier, monospace; 
+        font-weight: 900;
+        color: #ffffff;
+        position: relative;
+        top: 40%;
+        left: 35%;
+        cursor: pointer;
+        text-shadow: 0.05em 0.05em 0.1 #000000;
+        transition: 0.5s;
+        &:hover {
+            text-shadow: 0.05em 0.05em #fc0049, 0.09em 0.09em #fe8f01, 0.13em 0.13em #fdf21f, 0.17em 0.17em #3fdf4b, 0.21em 0.21em #3462fe;
+        }
+    }
+    #line {
+        width: 90vw;
+        margin: 0 auto;
+        border-bottom: 2px solid #000000;  
+    }
+  }
+
+  .logo {
+    color: white !important; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  .line {
+    position: relative;
+    z-index: 3;
+  }
+}

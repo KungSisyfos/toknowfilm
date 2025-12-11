@@ -1,0 +1,32 @@
+.homepage-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .home {
+        display: flex;
+        margin-top: 3%;
+        width: 28vw;
+        height: 28vh;
+        text-align: center;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        background-color: #29282877;
+        border-radius: 2%;
+        transition: 0.5s;
+        &:hover {
+            box-shadow: 0.07em 0.07em #fc0049, 0.12em 0.12em #fe8f01, 0.16em 0.16em #fdf21f, 0.22em 0.22em #3fdf4b, 0.27em 0.27em #3462fe;
+        }
+        h2 {
+            color: #ffffff;
+            text-shadow: 0.05em 0.05em 0.1em #000000;
+            transition: 0.5s;
+            &:hover {
+                text-shadow: 0.07em 0.07em #fc0049, 0.12em 0.12em #fe8f01, 0.16em 0.16em #fdf21f, 0.22em 0.22em #3fdf4b, 0.27em 0.27em #3462fe;
+            }
+        }
+    }
+}
+
